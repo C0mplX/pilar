@@ -1,11 +1,8 @@
-import Pilar from "./Pilar/Pilar";
+export * from './Pilar/Pilar';
+export * from './Router/BaseRouter';
+export * from './Router/IBaseRouter';
+export * from './Router/ErrorResponse';
+export * from './Router/SuccessResponse';
 
-const pilar = new Pilar({
-  port: 5000,
-  cors: true,
-  baseRoute: '/api',
-  controllers: [],
-  middleWares: []
-});
-pilar.listen();
+
 

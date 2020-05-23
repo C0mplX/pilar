@@ -11,7 +11,7 @@ interface IPilar {
   controllers: any;
 }
 
-class Pilar {
+export class Pilar {
   private readonly port: number;
   private readonly cors: boolean;
   private readonly baseRoute: string;
@@ -56,5 +56,3 @@ class Pilar {
   }
 
 }
-
-export default Pilar;

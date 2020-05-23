@@ -2,8 +2,10 @@
   "name": "pilar",
   "version": "1.0.0",
   "description": "A rest route framework based on express",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
+  "files": ["lib/**/*"],
+  "types": "lib/index.d.ts",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",

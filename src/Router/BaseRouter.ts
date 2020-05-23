@@ -2,7 +2,7 @@ import { Response } from 'express'
 import {SuccessResponse} from "./SuccessResponse";
 import {ErrorResponse} from "./ErrorResponse";
 
-class BaseRouter {
+export class BaseRouter {
   private isProduction: boolean;
 
   constructor() {
@@ -17,5 +17,3 @@ class BaseRouter {
     res.send(new ErrorResponse(status, {message, debug: exception ? null : exception }));
   }
 }
-
-export default BaseRouter;

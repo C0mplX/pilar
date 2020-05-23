@@ -1,4 +1,4 @@
-interface IBaseRouter {
+export interface IBaseRouter {
   initRoutes(): any;
   path: string;
 }
