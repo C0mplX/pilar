@@ -1,0 +1,7 @@
+{
+  "name": "pilar",
+  "version": "1.0.0",
+  "description": "A rest route framework based on express",
+  "main": "index.js",
+  "license": "MIT"
+}
