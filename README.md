@@ -15,6 +15,7 @@ const pilar = new Pilar({
   baseRoute: '/',
   routes: []
 });
+pilar.listen();
 ```
 With the command abov you wil get a express server listening on port 3001, but since there are no
 routes there will be little action on the server. Lets add a new route!
