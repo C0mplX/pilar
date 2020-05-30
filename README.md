@@ -4,7 +4,7 @@ A super lightweight framework for working with express in a more structural and 
 ## How to use it
 In order to get started using Pilar just run
  
-`$ yarn add pilar-sever`
+`$ yarn add pilar-server`
 
 Then in order to create a new express server you add the following
 
