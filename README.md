@@ -62,7 +62,7 @@ const pilar = new Pilar({
   port: 3001,
   cors: true,
   baseRoute: '/',
-  routes: [new UserRotes()]
+  routes: [new UserRoutes()]
 });
 ```
 
@@ -73,7 +73,7 @@ const pilar = new Pilar({
   cors: true,
   baseRoute: '/',
   middleWares: [myloggerMiddleware],
-  routes: [new UserRotes()]
+  routes: [new UserRoutes()]
 });
 ```
 pilar also comes with a simple logger in order to turn it on simply add 
@@ -84,7 +84,7 @@ const pilar = new Pilar({
   cors: true,
   baseRoute: '/',
   middleWares: [myloggerMiddleware],
-  routes: [new UserRotes()],
+  routes: [new UserRoutes()],
   logging: true
 });
 ```
