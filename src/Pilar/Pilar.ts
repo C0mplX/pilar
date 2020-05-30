@@ -9,7 +9,7 @@ interface IPilar {
   cors?: boolean;
   baseRoute?: string;
   logging?: boolean;
-  middleWares: any;
+  middleWares?: any;
   routes: any;
 }
 
@@ -30,7 +30,9 @@ export class Pilar {
     this.logging    = config.logging || false;
 
     this.setup();
-    this.middlewares(config.middleWares);
+    if(config.middleWares) {
+      this.middlewares(config.middleWares);
+    }
     this.routes(config.routes);
   }
 
@@ -42,7 +44,7 @@ export class Pilar {
 
   private routes(controllers: { forEach: (arg0: (controller: any) => void) => void; }) {
     controllers.forEach(controller => {
-      this.app.use('/', controller.router)
+      this.app.use(this.baseRoute, controller.router)
     })
   }
 

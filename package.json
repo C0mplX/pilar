@@ -1,6 +1,6 @@
 {
   "name": "pilar-server",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "A rest route framework based on express",
   "main": "lib/index.js",
   "license": "MIT",

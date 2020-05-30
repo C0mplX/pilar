@@ -1,9 +1,9 @@
-import * as express from "express";
+import express, {Express} from "express";
 
-class BaseRouter {
-  public express: any;
+export class BaseRouter {
+  public router: Express;
 
   constructor() {
-    this.express = express.Router();
+    this.router = express();
   }
 }
